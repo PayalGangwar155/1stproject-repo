@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Bake House Company</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #fffaf3;
+            color: #333;
+        }
+
+        header {
+            background: #f4a261;
+            color: white;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        nav h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url("https://images.unsplash.com/photo-1549931319-a545dcf3bc73");
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #e76f51;
+        }
+
+        .about p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .product-card h3 {
+            margin-bottom: 10px;
+            color: #f4a261;
+        }
+
+        .why-us {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .why-box {
+            background: #ffe8d6;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .process {
+            background: #fef1e6;
+        }
+
+        .process ol {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .testimonials {
+            background: #fff;
+        }
+
+        .testimonial {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery div {
+            background: #f4a261;
+            height: 180px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input, .contact textarea {
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            padding: 12px;
+            background: #e76f51;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            background: #264653;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1>Sunrise Bake House</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h2>Freshly Baked Every Sunrise</h2>
+        <p>At Sunrise Bake House Company, we bake happiness using the finest ingredients, traditional recipes, and a passion for perfection.</p>
+    </div>
+</div>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        Sunrise Bake House Company was founded with one simple mission: to deliver fresh, delicious,
+        and high-quality baked goods every single day. From soft breads to delightful pastries,
+        we combine tradition and innovation to create unforgettable flavors.
+    </p>
+</section>
+
+<section>
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product-card">
+            <h3>Fresh Breads</h3>
+            <p>Soft, crusty, and baked daily using premium flour.</p>
+        </div>
+        <div class="product-card">
+            <h3>Cakes</h3>
+            <p>Perfect for birthdays, weddings, and celebrations.</p>
+        </div>
+        <div class="product-card">
+            <h3>Pastries</h3>
+            <p>Flaky, buttery pastries that melt in your mouth.</p>
+        </div>
+        <div class="product-card">
+            <h3>Cookies</h3>
+            <p>Crunchy on the outside, soft on the inside.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Why Choose Us</h2>
+    <div class="why-us">
+        <div class="why-box">✔ Fresh Ingredients</div>
+        <div class="why-box">✔ Traditional Recipes</div>
+        <div class="why-box">✔ Skilled Bakers</div>
+        <div class="why-box">✔ Customer Satisfaction</div>
+    </div>
+</section>
+
+<section class="process">
+    <h2>Our Baking Process</h2>
+    <ol>
+        <li>Carefully select premium ingredients</li>
+        <li>Prepare dough using traditional methods</li>
+        <li>Allow natural fermentation</li>
+        <li>Bake fresh every morning</li>
+        <li>Serve with love and care</li>
+    </ol>
+</section>
+
+<section class="testimonials">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonial">
+        "The best bakery in town! Everything tastes fresh and amazing."
+    </div>
+    <div class="testimonial">
+        "Sunrise Bake House cakes made our celebration unforgettable!"
+    </div>
+</section>
+
+<section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <div>Bread</div>
+        <div>Cakes</div>
+        <div>Pastries</div>
+        <div>Cookies</div>
+        <div>Bakery</div>
+        <div>Fresh Oven</div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Sunrise Bake House Company. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
